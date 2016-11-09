@@ -44,11 +44,15 @@ ul {
 .margin10 {
   margin-bottom: 10px;
 }
-.square {
+.vidget {
   border: 3px solid #D6E1E5;
   border-radius: 5px;
-  height: 400px;
   padding: 40px;
+}
+@media (min-width: 992px) {
+  .vidget {
+    height: 400px;
+  }
 }
 .button {
   background: #0187D6;
@@ -118,41 +122,37 @@ ul {
 .date {
   padding-bottom: 50px;
 }
-.accounts-gallery .owl-item {
+.accounts .vidget {
   float: left;
-  overflow: hidden;
   text-align: center;
 }
-.accounts-gallery .owl-item img {
+.accounts .vidget img {
   width: 50%;
 }
-.accounts-gallery .name {
+.accounts .name {
   color: #FAD36A;
   font-size: 19px;
   letter-spacing: 0.5px;
 }
-.accounts-gallery .activity {
+.accounts .activity {
   color: #BACBD2;
   text-transform: uppercase;
   font-size: 14px;
 }
-.accounts-gallery .owl-nav {
-  display: none;
+.accounts .social {
+  margin-top: 40px;
 }
-.accounts-gallery .social {
-  display: inline-block;
+.accounts .social img {
+  width: 40px;
 }
-.accounts-gallery .social img {
-  width: 30px;
-}
-.accounts-gallery .followers {
+.accounts .followers {
   margin-top: 50px;
 }
-.accounts-gallery .followers h5 {
+.accounts .followers h5 {
   color: #B1C6CB;
   font-weight: 100;
 }
-.accounts-gallery .followers span {
+.accounts .followers span {
   color: #92A5A9;
 }
 .container {
