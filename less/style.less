@@ -25,7 +25,6 @@ a {
 }
 h4 {
   margin: 0;
-  
 }
 img {
   max-width: 100%;
@@ -35,31 +34,45 @@ h1 {
 }
 h5 {
   margin: 0;
-      letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
 }
 h3 {
-  margin: 0;
+  
+}
+input{
+   border-radius: 5px;
+        margin: 2px;
+        outline: none;
+        width: 90%;
+        height: 50px;
+        padding: 20px;
+        font-size: 15px;
+        border: 1px solid #C8D9DD;
+        color:  #a8aaab;
 }
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.margin10{
-   margin-bottom: 10px;
+.margin10 {
+  margin-bottom: 10px;
 }
-.vidget{
-      border: 3px solid #D6E1E5;
-    border-radius: 5px;
-        
-            padding: 40px;
+.vidget {
+  border: 3px solid #D6E1E5;
+  border-radius: 5px;
+  padding: 40px;
 }
 @media (min-width:992px) {
-  .vidget{
-  height: 400px;
+  .vidget {
+    height: 400px;
+  }
 }
+@media (min-width:320px) and (max-width:992px) {
+  .vidget {
+    width: 100%;
+  }
 }
-
 
 .button {
   background: #0187D6;
@@ -84,7 +97,7 @@ ul {
     }
   }
   &.warning {
-    background-color: #FFCC00;
+    background-color: #FAD36A;
 
     &:hover {
       background-color: #d8ad00;
@@ -97,17 +110,34 @@ ul {
       background-color: #3a863d;
     }
   }
-  &.white{
+  &.white {
     background-color: white;
   }
-  &.long{
-    padding: 20px 120px;
+  &.blue{
+    background-color: #01ABEE;
+    color: white;
+    &:hover{
+      background-color: #0187bb;
+    }
+  }
+  &.violet{
+    background-color: #3B5999;
+    &:hover{
+      background-color: #2d4474;
+    }
+  }
+  &.long {
+    padding: 20px 0;
     border-radius: 5px;
+        width: 90%;
   }
 }
-
-
-
+.grey{
+  color: #91A4AB;
+}
+.blue{
+  color: #18C0F3;
+}
 // шапка
 // адаптивность
 @media (min-width:320px) and (max-width:992px) {
@@ -122,7 +152,7 @@ ul {
 .header {
   background-color: #FAD36A;
   color: #FEFFFE;
-      margin-bottom: 100px;
+  margin-bottom: 100px;
 
   h4 {
     padding: 100px 0;
@@ -144,54 +174,100 @@ ul {
 .date {
   padding-bottom: 50px;
 }
-
 // юзеры
-.accounts{
-  
-  .vidget{
+.accounts {
+  .vidget {
     float: left;
-    
     text-align: center;
-    img{
+
+    img {
       width: 50%;
-
     }
-
   }
-    .name{
-  color: #FAD36A;
-      font-size: 19px;
+  .name {
+    color: #FAD36A;
+    font-size: 19px;
     letter-spacing: 0.5px;
-}
-.activity{
-  color: #BACBD2;
-  text-transform: uppercase;
-      font-size: 14px;
+  }
+  .activity {
+   
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  .social {
+    margin-top: 40px;
+
+    img {
+      width: 40px;
+    }
+    a {
+      &:hover {
+        border: 2px solid grey;
+      }
+    }
+  }
+  .followers {
+    margin-top: 50px;
+
+    h5 {
+      color: #B1C6CB;
+      font-weight: 100;
+    }
+   
+  }
 }
 
-.social{
-      
-  margin-top: 40px;
+// регистрация
+
+.signin{
+  text-align: center;
+  h2{
+    color: #FAD36A;
+        font-size: 30px;
+  }
+  .login{
+    input{
+          
+    background-color: #E1EEF4;
+    border: none;
     
+    }
+    .helping{
+          margin: 10px;
+      span{
+        white-space: nowrap;
         
-  img{
-        width: 40px;
+      }
+      .blue{
+        float: right;
+      }
+    }
   }
-
-}
-.followers{
-  margin-top: 50px;
-  h5{
-    color: #B1C6CB;
-        font-weight: 100;
-
+  .social{
+        margin-top: 40px;
+            border-left: 1px solid #DBE4E8;
+            position: relative;
+    h3{
+          font-size: 17px;
+    font-weight: 100;
+    
+    }
+    .button{
+      margin-top: 20px;
+      width: 80%;
+    }
+     .or{
+        position: absolute;
+    left: -18px;
+    top: 50%;
+    background-color: #D6E1E5;
+    color: white;
+    border-radius: 50%;
+   padding: 10px 12px; }
   }
-  span{
-    color: #92A5A9;
-  }
+ 
 }
 
-}
 
 
 

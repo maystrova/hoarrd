@@ -33,8 +33,16 @@ h5 {
   margin: 0;
   letter-spacing: 0.5px;
 }
-h3 {
-  margin: 0;
+input {
+  border-radius: 5px;
+  margin: 2px;
+  outline: none;
+  width: 90%;
+  height: 50px;
+  padding: 20px;
+  font-size: 15px;
+  border: 1px solid #C8D9DD;
+  color: #a8aaab;
 }
 ul {
   margin: 0;
@@ -52,6 +60,11 @@ ul {
 @media (min-width: 992px) {
   .vidget {
     height: 400px;
+  }
+}
+@media (min-width: 320px) and (max-width: 992px) {
+  .vidget {
+    width: 100%;
   }
 }
 .button {
@@ -76,7 +89,7 @@ ul {
   background-color: #8f181e;
 }
 .button.warning {
-  background-color: #FFCC00;
+  background-color: #FAD36A;
 }
 .button.warning:hover {
   background-color: #d8ad00;
@@ -90,9 +103,29 @@ ul {
 .button.white {
   background-color: white;
 }
+.button.blue {
+  background-color: #01ABEE;
+  color: white;
+}
+.button.blue:hover {
+  background-color: #0187bb;
+}
+.button.violet {
+  background-color: #3B5999;
+}
+.button.violet:hover {
+  background-color: #2d4474;
+}
 .button.long {
-  padding: 20px 120px;
+  padding: 20px 0;
   border-radius: 5px;
+  width: 90%;
+}
+.grey {
+  color: #91A4AB;
+}
+.blue {
+  color: #18C0F3;
 }
 @media (min-width: 320px) and (max-width: 992px) {
   .header {
@@ -135,7 +168,6 @@ ul {
   letter-spacing: 0.5px;
 }
 .accounts .activity {
-  color: #BACBD2;
   text-transform: uppercase;
   font-size: 14px;
 }
@@ -145,6 +177,9 @@ ul {
 .accounts .social img {
   width: 40px;
 }
+.accounts .social a:hover {
+  border: 2px solid grey;
+}
 .accounts .followers {
   margin-top: 50px;
 }
@@ -152,8 +187,47 @@ ul {
   color: #B1C6CB;
   font-weight: 100;
 }
-.accounts .followers span {
-  color: #92A5A9;
+.signin {
+  text-align: center;
+}
+.signin h2 {
+  color: #FAD36A;
+  font-size: 30px;
+}
+.signin .login input {
+  background-color: #E1EEF4;
+  border: none;
+}
+.signin .login .helping {
+  margin: 10px;
+}
+.signin .login .helping span {
+  white-space: nowrap;
+}
+.signin .login .helping .blue {
+  float: right;
+}
+.signin .social {
+  margin-top: 40px;
+  border-left: 1px solid #DBE4E8;
+  position: relative;
+}
+.signin .social h3 {
+  font-size: 17px;
+  font-weight: 100;
+}
+.signin .social .button {
+  margin-top: 20px;
+  width: 80%;
+}
+.signin .social .or {
+  position: absolute;
+  left: -18px;
+  top: 50%;
+  background-color: #D6E1E5;
+  color: white;
+  border-radius: 50%;
+  padding: 10px 12px;
 }
 .container {
   margin-right: auto;
